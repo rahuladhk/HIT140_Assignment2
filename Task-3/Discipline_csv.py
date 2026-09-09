@@ -2,6 +2,7 @@ import pandas as pd
 
 df = pd.read_csv("wc2026_efi.csv")
 
+#formatting data frame
 discipline = df[
     [
         "player_id",
@@ -17,6 +18,7 @@ discipline = df[
     ]
 ]
 
+#saving new csv file
 discipline.to_csv("FIFA_2026_Discipline.csv", index=False)
 
 print("Discipline CSV created successfully!")
